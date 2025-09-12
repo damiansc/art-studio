@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: $font_basic;
+	min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #F7F6F2;
+
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+// body.admin-bar .glpage {
+//   height: calc(100vh - 32px);
+
+//   @media screen and (min-width: $break_md) {
+//     height: calc(100vh - 46px);
+//   }
+// }
+
+.body-cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 98;
+  background-color: rgba(83, 81, 80, 0.9);
+
+  &.open {
+    display: block;
+  }
+}
+
+ul, ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hide-desktop {
+  @media screen and (min-width: $break_lg) {
+    display: none;
+  }
+}
+
+.hide-mobile {
+  display: none;
+
+  @media screen and (min-width: $break_lg) {
+    display: block;
+  }
+}
+
+html #wpadminbar {
+  position: fixed;
+}
+
+.glpage {
+  min-width: 320px;
+  width: 100%;
+  max-width: 100%;
+  // padding-top: 135px;
+  // AOS not working correct
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+
+  // @media screen and (min-width: $break_sm) {
+  //   padding-top: 92px;
+  // }
+
+  & > * {
+    width: 100%;
+  }
+}

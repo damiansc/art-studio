@@ -1,0 +1,47 @@
+.xoo-wsc-header {
+  padding: 31px 24px;
+
+  .xoo-wsch-text {
+    margin: 0;
+  }
+
+  .xoo-wsch-bki {
+    display: none;
+  }
+
+  .xoo-wsch-items-count {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: #0A0A0A;
+
+    &::before {
+      content: "(";
+    }
+
+    &::after {
+      content: ")";
+    }
+  }
+
+  .xoo-wsch-close {
+    font-size: 20px;
+    transition: color .3s;
+
+    &:hover {
+      color: $color_brown;
+    }
+  }
+}
+
+.xoo-wsc-footer,
+.xoo-wsc-body {
+  .xoo-wsc-btn {
+    font-weight: 700;
+    border-radius: 34px;
+    transition: background-color .3s, color .3s, border-color .3s;
+  }
+}

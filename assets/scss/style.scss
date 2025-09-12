@@ -1,0 +1,24 @@
+// 1. Fonts
+@import 'fonts/lato';
+@import 'fonts/merchant';
+
+// 1. Variables and usefull stuff
+@import 'utils/variables';
+
+// 2. Base stuff
+@import 'base/base';
+
+// 3. Layouts
+@import 'section/header';
+@import 'section/intro';
+@import 'section/text-editor';
+@import 'section/text-image';
+@import 'section/recommended-products';
+@import 'section/footer';
+
+// 4. Components
+@import 'components/buttons';
+@import 'components/side-cart';
+@import 'components/wpcf7';
+
+// 5. Pages

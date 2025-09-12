@@ -1,0 +1,142 @@
+.section-intro {
+
+  .splide__arrows {
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+    display: none;
+    align-items: center;
+    transform: translate(-18%, 0);
+    z-index: 9;
+
+    @media screen and (min-width: $break_lg) { 
+      display: flex;
+    }
+  }
+
+  .splide__arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color_white;
+    width: 164px;
+    height: 72px;
+    cursor: pointer;
+    border: none;
+    transition: background-color .3s;
+
+    &[disabled] {
+      background-color: #EBEBEB;
+
+      svg {
+        opacity: 0.1;
+      }
+    }
+    
+    &--prev {
+      border-top-left-radius: 8px;
+      
+      svg {
+        transform: scale(-1, 1);
+      }
+    }
+
+    &--next {
+      border-top-right-radius: 8px;
+    }
+
+    &:not([disabled]):hover {
+      background-color: $color_brown;
+
+      svg {
+        path {
+          stroke: $color_white;
+        }
+      }
+    }
+
+    svg path {
+      transition: stroke .3s;
+    }
+  }
+
+  .splide-pagination-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    right: 20px;
+    z-index: 9;
+
+    @media screen and (min-width: $break_md) { 
+      bottom: 36px;
+    }
+
+    li {
+      width: 15%;
+      max-width: 37px;
+      margin: 0 7px;
+    }
+  }
+
+  .splide__pagination__page {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(202, 202, 202, 0.45);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+
+    &.is-active {
+      background-color: $color_white;
+    }
+  }
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translate(-10%, -50%);
+  max-width: 580px;
+
+  &__text-above-title {
+    font-size: 12px;
+    font-weight: $weight_regular;
+    line-height: 2.7;
+    letter-spacing: 2px;
+    color: $color_white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: $font_secondary;
+    font-size: 36px;
+    font-weight: $weight_extralight;
+    line-height: 1.2;
+    color: $color_white;
+
+    @media screen and (min-width: $break_md) { 
+      font-size: 72px;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: $weight_light;
+    line-height: 2.3;
+    color: $color_white;
+    max-width: 440px;
+    margin-bottom: 32px;
+  }
+}
+
+.slide-image {
+  img {
+    width: 100vw;
+    height: 65vw;
+    min-height: 500px;
+    max-height: 920px;
+    object-fit: cover;
+  }
+}
