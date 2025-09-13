@@ -4,6 +4,8 @@
 
 <section class="section-text-editor">
   <div class="container">
-    <?php echo wp_kses_post($editor); ?>
+    <div class="section-text-editor__wrapper">
+      <?php echo wp_kses_post($editor); ?>
+    </div>
   </div>
 </section>

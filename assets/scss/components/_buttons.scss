@@ -1,16 +1,17 @@
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background-color: $color_white;
-  padding: 14px 40px;
+  padding: 13px 40px;
   font-size: 14px;
   font-weight: $weight_regular;
   line-height: 1.8;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 40px;
-  transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s, border-color .3s;
 
   &--white {
     color: $color_brown;
@@ -27,7 +28,9 @@
 
     &:hover {
       background-color: $color_white;
+      border-color: $color_brown;
       color: $color_brown;
+
     }
   }
 

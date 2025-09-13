@@ -1,0 +1,113 @@
+.woocommerce.single-product {
+  .product {
+
+  }
+
+  .product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product-image {
+    width: 50%;
+    text-align: center;
+
+    &__text {
+      font-size: 20px;
+      font-weight: $weight_light;
+      line-height: 1;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $color_brown;
+      margin-top: 15px;
+    }
+    
+    img {
+      width: 65%;
+    }
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: $color_white;
+    border-radius: 8px;
+    margin-bottom: 0!important;
+    align-self: stretch;
+
+    @media screen and (min-width: $break_md) {
+      padding: 62px;
+      width: 48%!important;
+    }
+
+    .product-category a {
+      font-size: 14px;
+      font-weight: $weight_regular;
+      line-height: 2.3;
+      letter-spacing: 2px;
+      color: $color_brown;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .product_title {
+      font-family: $font_secondary;
+      font-size: 36px;
+      font-weight: $weight_extralight;
+      line-height: 1.2;
+      color: $color_black;
+      margin-bottom: 20px;
+
+      @media screen and (min-width: $break_md) {
+        font-size: 48px;
+      }
+    }
+
+    .price {
+      .amount bdi {
+        font-family: $font_secondary;
+        font-size: 24px;
+        font-weight: $weight_extralight;
+        line-height: 1.2;
+        color: $color_brown;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: $break_md) {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .woocommerce-product-details__short-description {
+      font-size: 14px;
+      font-weight: $weight_light;
+      line-height: 2.3;
+      color: $color_black;
+
+      p:not(:last-of-type) {
+        margin-bottom: 32px;
+      }
+    }
+
+    .stock {
+      display: flex;
+      align-items: center;
+      margin-top: auto;
+      font-size: 14px;
+      font-weight: $weight_regular;
+      line-height: 2.3;
+      color: $color_brown;
+
+      svg {
+        margin-right: 14px;
+      }
+    }
+
+    .cart {
+      margin-top: 45px;
+      margin-bottom: 0;
+    }
+  }
+}

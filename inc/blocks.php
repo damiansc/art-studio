@@ -41,5 +41,32 @@ function my_acf_blocks_init() {
             'render_template'   => 'template/blocks/text-image.php',
             'category'          => 'layout',
         ));
+
+        // Register a breadcrumbs block.
+        acf_register_block_type(array(
+            'name'              => 'breadcrumbs',
+            'title'             => __('Breadcrumbs'),
+            'description'       => __('A custom breadcrumbs block.'),
+            'render_template'   => 'template/blocks/breadcrumbs.php',
+            'category'          => 'layout',
+        ));
+
+        // Register a faq block.
+        acf_register_block_type(array(
+            'name'              => 'faq',
+            'title'             => __('FAQ'),
+            'description'       => __('A custom faq block.'),
+            'render_template'   => 'template/blocks/faq.php',
+            'category'          => 'layout',
+        ));
+
+        // Register a about me block.
+        acf_register_block_type(array(
+            'name'              => 'about-me',
+            'title'             => __('O mnie'),
+            'description'       => __('A custom about me block.'),
+            'render_template'   => 'template/blocks/about-me.php',
+            'category'          => 'layout',
+        ));
     }
 }

@@ -1,0 +1,22 @@
+.woocommerce {
+  .woocommerce-breadcrumb {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: $weight_regular;
+    line-height: 1.5;
+    color: #667085;
+
+    a {
+      color: inherit;
+      transition: color .3s;
+      
+      &:hover {
+        color: $color_brown;
+      }
+    }
+
+    svg {
+      margin: 0 14px;
+    }
+  }
+}

@@ -11,14 +11,21 @@
 // 3. Layouts
 @import 'section/header';
 @import 'section/intro';
-@import 'section/text-editor';
+@import 'section/breadcrumbs';
 @import 'section/text-image';
 @import 'section/recommended-products';
+@import 'section/faq';
+@import 'section/about-me';
+@import 'section/text-editor';
 @import 'section/footer';
 
 // 4. Components
 @import 'components/buttons';
 @import 'components/side-cart';
 @import 'components/wpcf7';
+@import 'components/woocommerce-breadcrumbs';
+@import 'components/woocommerce-pagination';
 
 // 5. Pages
+@import 'pages/woocommerce-products';
+@import 'pages/woocommerce-product';

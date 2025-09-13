@@ -1,41 +1,52 @@
 .section-text-editor {
   color: $color_black;
+  padding-bottom: 102px;
+
+  &__wrapper {
+    max-width: 950px;
+  }
+
+  h1, h2, h3,
+  h4, h5, h6 {
+    font-family: $font_secondary;
+    font-weight: $weight_thin;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
 
   h1, h2 {
     font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
 
-    @media screen and (min-width: $break_md) { 
+    @media screen and (min-width: $break_md) {
       font-size: 48px;
     }
   }
 
   h3 {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 1.2;
+    font-size: 30px;
+    
+    @media screen and (min-width: $break_md) {
+      font-size: 36px;
+    }
   }
 
   h4, h5 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.2;
-  }
-
-  h1, h2 {
-    margin: 50px 0 39px;
-  }
-
-  h3, h4, h5 {
-    margin: 30px 0 20px;
+    font-size: 24px;
+    
+    @media screen and (min-width: $break_md) {
+      font-size: 30px;
+    }
   }
 
   p, li {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 12px 0;
+    font-size: 14px;
+    font-weight: $weight_light;
+    line-height: 2.3;
+    color: $color_black;
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 32px;
   }
 
   ul {
@@ -53,6 +64,5 @@
   }
 
 }
-
 
 

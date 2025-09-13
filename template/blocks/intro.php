@@ -44,8 +44,8 @@
               <?php endif; ?>
 
               <?php if( $button ): ?>
-                <a class="btn btn--white btn--big slide-content__btn" href="<?php echo esc_url($button['url']); ?>" target="<?php echo esc_attr($button['target']); ?>">
-                  <?php echo $button['title']; ?>
+                <a class="btn btn--white slide-content__btn" href="<?php echo esc_url($button['url']); ?>" target="<?php echo esc_attr($button['target']); ?>">
+                  <?php echo esc_html($button['title']);  ?>
                 </a>
               <?php endif; ?>
             </div>

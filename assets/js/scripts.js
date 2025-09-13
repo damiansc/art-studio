@@ -54,4 +54,14 @@ document.addEventListener( 'DOMContentLoaded', function() {
     recommendedProductsSlider.mount();
   }
 
+  // Dodanie klasy current-cat do aktywej kategorii w Sidebarze w sklepie
+  const links = document.querySelectorAll('.wc-block-product-categories-list a');
+  const currentURL = window.location.href;
+
+  links.forEach(link => {
+    if (currentURL.includes(link.getAttribute('href'))) {
+      link.parentElement.classList.add('current-cat');
+    }
+  });
+
 } );

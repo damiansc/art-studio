@@ -61,3 +61,15 @@ add_filter('wpcf7_autop_or_not', '__return_false');
 
 // Add post thumbnails support
 add_theme_support( 'post-thumbnails' );
+
+function mytheme_register_sidebar() {
+    register_sidebar([
+        'name'          => 'Sklep – Sidebar',
+        'id'            => 'shop-sidebar',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ]);
+}
+add_action( 'widgets_init', 'mytheme_register_sidebar' );

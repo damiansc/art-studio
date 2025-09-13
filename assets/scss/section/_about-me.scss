@@ -1,0 +1,116 @@
+.section-about-me {
+  padding: 36px 0 50px;
+  
+  @media screen and (min-width: $break_lg) {
+    padding: 72px 0 100px;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: $break_lg) {
+      flex-direction: row;
+    }
+  }
+}
+
+.about-me-column {
+  &--left {
+    width: 100%;
+
+    @media screen and (min-width: $break_lg) {
+      width: 40%;
+    }
+  }
+
+  &--right {
+    width: 100%;
+
+    @media screen and (min-width: $break_lg) {
+      width: 56%;
+    }
+  }
+
+  &__text-above-title {
+    font-size: 14px;
+    font-weight: $weight_regular;
+    line-height: 2.3;
+    letter-spacing: 2px;
+    color: $color_black;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-family: $font_secondary;
+    font-size: 48px;
+    font-weight: $weight_thin;
+    line-height: 1.25;
+    color: $color_black;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $break_md) {
+      font-size: 72px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: $weight_light;
+    line-height: 2;
+    color: #060606;
+    
+    p:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.about-me-image {
+  margin-top: 80px;
+
+  @media screen and (min-width: $break_lg) {
+    margin-top: 165px;
+  }
+
+  &__image {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    max-width: 1075px;
+    margin: 0 auto;
+    font-family: $font_secondary;
+    font-size: 24px;
+    font-weight: $weight_thin;
+    line-height: 2;
+    color: $color_black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: $color_white;
+    border-radius: 8px;
+    margin-top: -10px;
+    z-index: 1;
+    
+    @media screen and (min-width: $break_md) {
+      margin-top: -70px;
+      padding: 62px;
+    }
+
+    @media screen and (min-width: $break_lg) {
+      margin-top: -140px;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+  }
+}
